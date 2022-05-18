@@ -1,0 +1,18 @@
+<view class="container">
+  <view class="image-list">
+    <!-- 显示选择图片 -->
+    <block wx:for="{{images}}" wx:key="*this">
+      <view class="image-wrap">
+        <image class="image" src="{{item}}" mode="aspectFill" bind:tap="onPreviewImage" data-imgsrc="{{item}}"></image>
+        <i class="iconfont iconshanchu1" bind:tap="onDelImage" data-index="{{index}}"></i>
+      </view>
+    </block>
+    <!-- 选择图片按钮 -->
+    <view class="image-wrap selectphoto" bind:tap="onChooseImage">
+      <i class="iconfont iconjiahao"></i>
+    </view>
+  </view>
+</view>
+<view class="footer" style="bottom:{{footerBottom}}px">
+  <button class="send-btn" bind:tap="send">发布</button>
+</view>

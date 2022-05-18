@@ -1,0 +1,143 @@
+pages{
+  background-color: #f4f4f4;
+  font-size: 32rpx;
+}
+/* 头像区域样式 */
+
+.avatar{
+  position: relative;
+  margin: 0 auto;
+  width: 90%;
+  height: 400rpx;
+  display: flex;
+  justify-content: space-between;
+}
+/* 头像图片 */
+.avatar .userAvatar{
+  width: 150rpx;
+  height: 150rpx;
+  margin-top: 80rpx;
+}
+.avatar .userAvatar>view{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 16rpx;
+
+}
+.avatar .userAvatar .open{
+  width: 100%;
+  height: 100%;
+}
+.avatar .Sname{
+  width: 80%;
+  height: 150rpx;
+  margin-top: 80rpx;
+  position: relative;
+}
+.avatar .Sname .text{
+  font-size: 36rpx;
+  font-family: '微软雅黑';
+  margin-left: 20rpx;
+  font-weight: bold;
+  color: #000000;
+  float: left;
+  margin-top: 10rpx;
+}
+.avatar .Sname .SexImg>image{
+  width: 36rpx;
+  height: 36rpx;
+  margin-left: 20rpx;
+  margin-top: 18rpx;
+}
+.avatar .Sname .TextPost{
+  margin-top: 20rpx;
+}
+.avatar .Sname .TextPost>span{
+  font-size: 24rpx;
+  color: #000000;
+  margin-left: 20rpx;
+}
+.avatar .Sname .infermation{
+  position: absolute;
+  width: 150rpx;
+  height: 60rpx;
+  border: 1px solid #000000;
+  border-radius: 20rpx;
+  top: 40rpx;
+  right: 40rpx;
+  padding: 10rpx;
+}
+.avatar .Sname .infermation>image{
+  width: 50rpx;
+  height: 50rpx;
+  float: left;
+}
+.avatar .Sname .infermation>view{
+  color: #000000;
+  float: right;
+}
+.avatar .fen-info{
+  position: absolute;
+  width: 100%;
+  bottom: 30rpx;
+  margin-left: 20rpx;
+}
+.avatar .fen-info>view{
+  float: left;
+  margin-right: 40rpx;
+}
+.avatar .fen-info>view>text{
+  font-size: 36rpx;
+  font-weight: bold;
+  color:#000000;
+}
+.avatar .fen-info>view>view{
+  font-size: 24rpx;
+  color:#000000;
+  text-align: left;
+}
+/* 订单信息区域 */
+.content{
+  display: flex;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  padding: 65rpx 0;
+}
+/* 3块内容 */
+.content>view{
+  flex: 1;
+  text-align: center;
+}
+/* 3块图片 */
+.content>view>image{
+  width: 64rpx;
+  height: 50rpx;
+}
+/* 菜单区域 */
+.menu{
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20rpx;
+  box-sizing: border-box;
+}
+/* 四行样式 */
+.menu>view{
+  background-color: #fff;
+  margin-top: 10rpx;
+  line-height: 100rpx;
+  border-bottom: 1px solid #efefef;
+  height: 100rpx;
+  border-radius: 20rpx;
+  padding-left: 20rpx;
+}
+.menu>view:last-child{
+  border: none;
+}
+.menu>view>image{
+  float: right;
+  width: 30rpx;
+  height: 32rpx;
+  margin-top: 35rpx;
+  margin-right: 10rpx;
+}

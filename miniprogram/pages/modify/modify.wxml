@@ -1,0 +1,23 @@
+<!--pages/modify/modify.wxml-->
+<form bindsubmit="formSumbit" >
+  <view class="section">
+    <view class="section-title">姓名：</view>
+    <input type="text" name="username" value="{{username}}" placeholder="请输入姓名"/>
+  </view>
+  <!-- 性别 -->
+  <view class="section">
+    <view class="section-title">性别：</view>
+    <view>
+      <radio-group name="gender">
+        <label>
+          <radio value="男" checked="{{gender==='男'?'checked':''}}">男</radio>
+        </label>
+        <label>
+          <radio value="女" checked="{{gender==='女'?'checked':''}}">女</radio>
+        </label>
+      </radio-group>
+    </view>
+  <!-- 提交按钮 -->
+  <button form-type="submit">保存</button>
+  </view>
+</form>

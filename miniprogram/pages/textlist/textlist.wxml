@@ -1,0 +1,25 @@
+<view class="content">
+  <view class="box">
+    <view class="texthead" wx:for="{{textlist}}" wx:key="id">
+      <text>
+       {{item.title}}
+      </text>
+    </view>
+    <view class="textfoot" bindtap="again">
+      <text>
+        ------网易云热评《东西》
+      </text>
+    </view>
+    <button bindtap="again">
+      再来一条
+    </button>
+    <view class="icon">
+      <view>
+        <view wx:for="{{iconlist}}" wx:key="id">
+          <image src="{{item.imgsrc}}" mode="aspectFit" lazy-load="false" bindtap="change"/>
+          <span>{{item.detail}}</span>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

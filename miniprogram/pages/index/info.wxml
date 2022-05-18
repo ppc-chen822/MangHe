@@ -1,0 +1,9 @@
+<!-- <scroll-view class="content-info" scroll-y="true">
+    <swiper class="content-info-slide" indicator-dots="true" indicator-color="rgb(255,255,255,.5)"
+        indicator-active-color="#fff" autoplay circular>
+        <swiper-item>
+            <image src="../../images/img01.png">
+            </image>
+        </swiper-item>
+    </swiper>
+</scroll-view> -->

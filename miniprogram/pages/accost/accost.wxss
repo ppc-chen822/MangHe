@@ -1,0 +1,32 @@
+.contanier .box{
+  position: relative;
+    width:90%;
+    height: 300rpx; 
+    margin: 0 auto;
+    border: 1px solid #172182;
+    border-radius: 20rpx;
+    margin-top: 40rpx;
+    text-align: center;
+    font-family: "微软雅黑";
+    color: #172182;
+}
+.box>view:first-child{
+  font-size: 40rpx;
+  line-height: 250rpx;
+}
+.icon{
+  position: absolute;
+  bottom: 60rpx;
+  left: 180rpx;
+}
+.icon>view{
+  width: 100rpx;
+  height: 50rpx;
+  float: left;
+}
+.icon>view>image{
+  width: 42rpx;
+  height: 42rpx;
+  vertical-align: bottom;
+  margin-right: 5rpx;
+}

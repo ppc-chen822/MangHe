@@ -1,0 +1,57 @@
+<view class="container">
+  <view class="box" wx:for="{{postlist}}" wx:key="id">
+    <view class="list-one">
+      <view bindtap="showblog">
+        <image src="{{item.profileimgsrc}}" mode="aspectFit"></image>
+      </view>
+      <view>
+        <view class="Sname">
+          <text>{{item.intername}}</text>
+          <view>
+            <image src="{{item.SexImgsrc}}" mode="aspectFit"></image>
+          </view>
+        </view>
+        <view class="detail-info">
+          <span>{{item.age}}</span>
+          <span>{{item.city}}</span>
+          <span>{{item.work}}</span>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="content" wx:for="{{bloglist}}">
+    <view class="list-two">
+      <text class="two-text">
+        {{item.content}}
+      </text>
+      <view class="two-img">
+        <view>
+          <image src="{{item.img[0]}}"></image>
+        </view>
+        <view>
+          <image src="{{item.img[1]}}"></image>
+        </view>
+      </view>
+    </view>
+    <view class="list-three">
+      <span>{{item.createTime}}</span>
+      <view>
+        <view class="three-icon">
+          <image src="../../images/icon_10.png" mode="aspectFit"></image>
+          <span>分享</span>
+        </view>
+        <view class="three-icon">
+          <image src="../../images/icon_09.png" mode="aspectFit"></image>
+          <span>{{item.CommentNumber}}</span>
+        </view>
+        <view class="three-icon">
+          <image src="../../images/icon_06.png" mode="aspectFit"></image>
+          <span>{{item.LikeNumber}}</span>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="Fabu" bindtap="fabu">
+    <image src="../../images/icon_15.png"></image>
+  </view>
+</view>

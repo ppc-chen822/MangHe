@@ -1,0 +1,47 @@
+.content .box{
+  width: 90%;
+  margin: 180rpx auto;
+}
+.content .box .texthead{
+  text-align: center;
+  font-size: 40rpx;
+}
+.content .box .textfoot{
+  margin-top: 40rpx;
+  text-align: right;
+}
+.content .box button{
+  margin-top: 40rpx;
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  border: 1px dotted #000000;
+  background-color: rgba(0,0,0,0);
+  font-size: 20rpx;
+  padding: 25rpx;
+  box-sizing: border-box;
+  line-height: 90rpx;
+}
+.icon{
+  margin-top: 80rpx;
+  /* position: absolute;
+  bottom: 60rpx;
+  left: 180rpx; */
+}
+.icon>view{
+  width: 400rpx;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.icon>view>view{
+  width: 100rpx;
+  height: 50rpx;
+  float: left;
+  margin-left: 30rpx;
+}
+.icon>view>view>image{
+  width: 42rpx;
+  height: 42rpx;
+  vertical-align: bottom;
+  margin-right: 5rpx;
+}

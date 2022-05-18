@@ -1,0 +1,61 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/test/test",
+    "pages/mine/mine",
+    "pages/personinfo/personinfo",
+    "pages/boxinfom/boxinfom",
+    "pages/post/post",
+    "pages/Star/Star",
+    "pages/textlist/textlist",
+    "pages/boxinfow/boxinfow",
+    "pages/saveFrom/saveFrom",
+    "pages/boxlist/boxlist",
+    "pages/saveGet/saveGet",
+    "pages/boxlistm/boxlistm",
+    "pages/accost/accost",
+    "pages/modify/modify"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true,
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "缘来友你",
+    "navigationBarTextStyle": "black"
+  },
+    "tabBar": {
+      "color": "#000",
+      "selectedColor": "#172182",
+      "borderStyle": "white",
+      "backgroundColor": "#fff",
+    "list": [
+      {
+        "iconPath": "./images/icon01.png",
+        "selectedIconPath": "./images/icon_01.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "iconPath": "./images/icon04.png",
+        "selectedIconPath": "./images/icon_04.png",
+        "pagePath": "pages/accost/accost",
+        "text": "搭讪"
+      },
+      {
+        "iconPath": "./images/icon03.png",
+        "selectedIconPath": "./images/icon_03.png",
+        "pagePath": "pages/Star/Star",
+        "text": "星球"
+      },
+      {
+        "iconPath": "./images/icon02.png",
+        "selectedIconPath": "./images/icon_02.png",
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

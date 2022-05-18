@@ -1,0 +1,19 @@
+/* pages/modify/modify.wxss */
+page{
+  font-size: 32rpx;
+}
+.section{
+  padding: 40rpx;
+  border-bottom: 1px solid #efefef;
+}
+.section:last-child{
+  border: 0;
+}
+.section-title{
+  width: 20%;
+  float: left;
+}
+button{
+  background-color: #a18cd1;
+  margin-top: 40rpx;
+}

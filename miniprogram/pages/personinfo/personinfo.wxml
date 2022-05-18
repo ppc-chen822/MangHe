@@ -1,0 +1,42 @@
+<view class="info">
+  <!-- 头像 -->
+  <view>
+    <!-- 文字 -->
+    <view class="f1">头像</view>
+    <!-- 头像图片 -->
+    <view class="r1">
+      <image src="../../images/image03.jpg" mode="aspectFill" bindtap="changeAvtar"></image>
+    </view>
+    <!-- 箭头图片 -->
+    <image src="/images/arrow.png" class="arrow"></image>
+  </view>
+  <!-- 昵称 -->
+  <view>
+    <view class="f1">昵称</view>
+    <view class="r1">
+      {{username}}
+      <view class="arrow">
+      </view>
+    </view>
+  </view>
+  <!-- 性别 -->
+  <view>
+    <view class="f1">性别</view>
+    <view class="r1">
+      {{gender}}
+      <view class="arrow">
+      </view>
+    </view>
+  </view>
+  <!-- 城市 -->
+  <view>
+    <view class="f1">城市</view>
+    <view class="r1">
+      {{city}}
+      <view class="arrow">
+      </view>
+    </view>
+  </view>
+  <!-- 修改资料的按钮 -->
+  <button bindtap="jump">修改资料</button>
+</view>

@@ -1,0 +1,78 @@
+<!--头像区域 -->
+<view class="avatar">
+  <view class="userAvatar">
+    <view>
+      <open-data type="userAvatarUrl" class="open"></open-data>
+    </view>
+  </view>
+  <!-- <image src="../../images/image05.jpg" mode="aspectFill"></image> -->
+  <view class="Sname">
+    <open-data type="userNickName" class="text"></open-data>
+    <!-- <text>皮皮陈</text> -->
+    <view class="SexImg">
+      <image src="../../images/man.png" mode="aspectFit"></image>
+    </view>
+    <view class="TextPost">
+      <span>找个对象，回家过年</span>
+    </view>
+    <view class="infermation" bindtap="jump">
+      <image src="../../images/icon_11.png" mode="aspectFit"></image>
+      <view>资料</view>
+    </view>
+  </view>
+  <view class="fen-info">
+    <view>
+      <text>107</text>
+      <view>粉丝</view>
+    </view>
+    <view>
+      <text>25</text>
+      <view>关注</view>
+    </view>
+    <view>
+      <text>1980</text>
+      <view>获赞</view>
+    </view>
+  </view>
+</view>
+<!-- 订单信息 -->
+<!-- <view class="content">
+  待付款
+  <view>
+    <image src="/images/iconone.png"></image>
+    <view>待付款</view>
+  </view>
+  已退款
+  <view>
+    <image src="/images/icontwo.png"></image>
+    <view>已退款</view>
+  </view>
+  全部订单
+  <view>
+    <image src="/images/iconthree.png"></image>
+    <view>全部订单</view>
+  </view>
+</view> -->
+<!-- 菜单 -->
+<view class="menu">
+  <view bindtap="info">
+    个人资料
+    <image src="/images/arrow.png" class="arrow"></image>
+  </view>
+  <view bindtap="order">
+    我的动态
+    <image src="/images/arrow.png" class="arrow"></image>
+  </view>
+  <view bindtap="adress" bindtap="contact">
+    在线客服
+    <image src="/images/arrow.png" class="arrow"></image>
+  </view>
+  <view>
+    帮助与反馈
+    <image src="/images/arrow.png" class="arrow"></image>
+  </view>
+  <view>
+    设置
+    <image src="/images/arrow.png" class="arrow"></image>
+  </view>
+</view>

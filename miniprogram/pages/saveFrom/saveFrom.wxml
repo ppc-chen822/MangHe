@@ -1,0 +1,52 @@
+<view class="container">
+    <!-- <swiper autoplay="true" bindchange="cardSwiper" circular="true" class="card-swiper round-dot" duration="500" indicatorActiveColor="#FF4C94" indicatorColor="#8799a3" indicatorDots="true" interval="5000">
+        <swiper-item class="{{cardCur==index?'cur':''}}">
+            <view class="swiper-item">
+                <image mode="aspectFit" src="../../images/img01.png"></image>
+            </view>
+        </swiper-item>
+    </swiper> -->
+    <view class="form">
+        <form bindsubmit="submit">
+            <view class="send-title">发布交友盲盒</view>
+            <view class="f-radio">
+                <radio-group class="flex" name="sex">
+                    <label class="radio1 flex align-center">
+                        <radio class="radio red" value="男"></radio>
+                        <view class="btn-male">
+                            <image class="i-male" src="../../images/man.png"></image>
+                        </view>
+                    </label>
+                    <label class="flex align-center">
+                        <radio class="radio red" value="女"></radio>
+                        <view class="btn-female">
+                            <image class="i-female" src="../../images/female.png"></image>
+                        </view>
+                    </label>
+                </radio-group>
+            </view>
+            <view class="tui-picker-content" name="city">
+                <!-- <view class="tui-picker-name">省市区三级联动选择</view> -->
+                <picker bindchange="changeRegin" mode="region" value="{{region}}" name="city">
+                    <view class="tui-picker-detail">{{region[0]}} - {{region[1]}} - {{region[2]}}</view>
+                </picker>
+            </view>
+            <view class="form-group">
+                <input bindinput="getAge" class="cu-input" placeholder="年龄" type="number" name="age"></input>
+            </view>
+            <view class="form-group">
+                <input bindinput="getWxcode" class="cu-input" placeholder="微信号" type="text" name="wechat"></input>
+            </view>
+            <view class="form-group">
+                <input bindinput="getCity" class="cu-input" placeholder="职业" type="text" name="profession"></input>
+            </view>
+            <view class="form-group">
+                <input bindtap="showXZRagePop" class="cu-input" placeholder="学历" type="text" name="education"></input>
+            </view>
+            <view class="form-group">
+                <input bindtap="showXZRagePop" class="cu-input" placeholder="昵称" type="text" name="intername"></input>
+            </view>
+            <button form-type="submit" bindtap="warn">确定</button>
+        </form>
+    </view>
+</view>

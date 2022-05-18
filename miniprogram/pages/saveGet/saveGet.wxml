@@ -1,0 +1,25 @@
+<view class="contanier">
+  <view>你要选择的盲盒是？</view>
+  <view>
+    <image src="cloud://cloud1-9gdi5f822fbb6413.636c-cloud1-9gdi5f822fbb6413-1308738323/images/image02.png" mode="aspectFit"></image>
+    <!-- <radio-group bindchange="radioChange" class="flex  justify-center">
+      <label class="radio1 flex align-center">
+        <radio class="radio red" value="女"></radio>
+      </label>
+    </radio-group> -->
+  </view>
+  <view>
+    <image src="cloud://cloud1-9gdi5f822fbb6413.636c-cloud1-9gdi5f822fbb6413-1308738323/images/image01.png" mode="aspectFit"></image>
+  </view>
+  <radio-group bindchange="radioChange">
+    <label>
+      <radio class="radio purple" value="1" name="man"></radio>
+    </label>
+    <label>
+      <radio class="radio purple" value="0" name="woman"></radio>
+    </label>
+  </radio-group>
+  <!-- <view>
+    <button bindtap="showboxlist">下一步</button>
+  </view> -->
+</view>

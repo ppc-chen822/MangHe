@@ -1,0 +1,71 @@
+.container .box{
+  width: 100%;
+  margin-top: 80rpx;
+}
+.container .box .list-one{
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 40rpx;
+  display: flex;
+}
+.container .box .list-one>view:first-child{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  border: 1px solid rgba(0,0,0,.2);
+  overflow: hidden;
+}
+.container .box .list-one>view:first-child>image{
+  width: 100%;
+  height: 100%;
+}
+.container .box .list-one>view:nth-child(2){
+  width: 60%;
+}
+.container .box .list-one .Sname{
+  overflow: hidden;
+}
+.container .box .list-one .Sname text{
+  font-size: 36rpx;
+  font-family: '微软雅黑';
+  margin-left: 20rpx;
+  float: left;
+  font-weight: 550;
+}
+.container .box .list-one .Sname>view>image{
+  width: 36rpx;
+  height: 36rpx;
+  margin-left: 20rpx;
+  margin-top: 8rpx;
+}
+.container .box .list-one .detail-info{
+  width: 100%;
+  margin-top: 10rpx;
+}
+.container .box .list-one .detail-info span{
+  font-size: 24rpx;
+  font-family: '微软雅黑';
+  margin-left: 20rpx;
+}
+.container .wechat{
+  width: 100%;
+  margin-top: 10rpx;
+  margin-left: 10rpx;
+  /* font-size: 32rpx;
+  font-weight: bold; */
+}
+.container .wechat image{
+  width: 50rpx;
+  height: 50rpx;vertical-align: bottom;
+  /* margin-left: 25rpx; */
+}
+.container .wechat text{
+  margin-left: 10rpx;
+  font-weight: bold;
+}
+.container button{
+  width: 300rpx;
+  height: 80rpx;
+  background-color: #a18cd1;
+  margin-top: 50%;
+}

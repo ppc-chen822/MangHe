@@ -1,0 +1,38 @@
+<view class="contanier">
+  <view class="box" bindtap="showtextlistT">
+    <view>《土味情话》</view>
+    <view class="icon">
+      <view wx:for="{{iconlist}}" wx:key="id">
+        <image src="{{item.imgsrc}}" mode="aspectFit" lazy-load="false" />
+        <span>{{item.detail}}</span>
+      </view>
+    </view>
+  </view>
+  <view class="box" bindtap="showtextlist">
+    <view>《晚安情话》</view>
+    <view class="icon">
+      <view wx:for="{{iconlist}}" wx:key="id">
+        <image src="{{item.imgsrc}}" mode="aspectFit" lazy-load="false" />
+        <span>{{item.detail}}</span>
+      </view>
+    </view>
+  </view>
+  <view class="box" bindtap="showtextlist">
+    <view>《八字情话》</view>
+    <view class="icon">
+      <view wx:for="{{iconlist}}" wx:key="id">
+        <image src="{{item.imgsrc}}" mode="aspectFit" lazy-load="false" />
+        <span>{{item.detail}}</span>
+      </view>
+    </view>
+  </view>
+  <view class="box" bindtap="showtextlist">
+    <view>《网抑云》</view>
+    <view class="icon">
+      <view wx:for="{{iconlist}}" wx:key="id">
+        <image src="{{item.imgsrc}}" mode="aspectFit" lazy-load="false" />
+        <span>{{item.detail}}</span>
+      </view>
+    </view>
+  </view>
+</view>

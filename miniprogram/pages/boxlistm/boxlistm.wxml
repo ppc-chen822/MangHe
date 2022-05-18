@@ -1,0 +1,60 @@
+<view class="content_box" wx:for="{{arr}}" wx:key="{{key}}">
+	<!--中部盒子 -->
+	<view class="view_ce">
+		<!--图片盒子 -->
+		<view class="ProductIco_box">
+			<image class="ProductIco" src="{{item.img}}" mode="aspectFit"></image>
+		</view>
+		<!--内容 -->
+		<view class="view_content">
+			<view class='view_title'>{{item.service_name}} </view>
+			<view class="view_fl">
+				<text>¥ {{item.price}}</text>
+				<!--价格和按钮 -->
+				<view class="view_btn_box">
+					<!--产品数量不为 0 -->
+					<view class="view_btn" wx:if="{{item.state == 1}}">
+						<view class="view_img_left" bindtap='numminus' data-index="{{index}}">
+							<image src="../../images/icon_13.png"></image>
+						</view>
+						<!-- <view class="view_text_center"></view> -->
+						<input class="view_text_center" disabled='disabled' value="{{item.num}}" bindinput='input_num' data-index="{{index}}"></input>
+						<view class="view_img_right" bindtap='numadd' data-index="{{index}}">
+							<image src="../../images/icon_12.png"></image>
+						</view>
+					</view>
+					<!--产品数量为0 -->
+					<view class="view_add" wx:if="{{item.state == 0}}">
+						<view class="view_img_add" bindtap='showadd' data-index="{{index}}">
+							<image src="../../images/icon_12.png"></image>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+		<!--删除按钮 -->
+	</view>
+	<button bindtap="showinfo">
+		解锁盲盒
+	</button>
+</view>
+
+<!-- <view class='buy_btn_box'>
+
+	<view class="collect_bottom">
+
+		<view class="collect_right">
+
+			<text class="collect_one">共{{add_car_num}}件商品</text>
+
+			<text class="collect_two" style='padding-left:20rpx;'>¥ {{price}}</text>
+
+		</view>
+
+		<text class='buy_btn'>提交订单</text>
+
+	</view>
+
+
+
+</view> -->

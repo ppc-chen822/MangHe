@@ -1,0 +1,15 @@
+<view class="container">
+    <view class="flex">
+        <view bindtap="showSaveForm" class="btn-save">
+            <image src="cloud://cloud1-9gdi5f822fbb6413.636c-cloud1-9gdi5f822fbb6413-1308738323/images/image03.png" mode="aspectFit"></image>
+            <text>存</text>
+        </view>
+        <view bindtap="showGetPop" class="btn-get">
+            <image src="cloud://cloud1-9gdi5f822fbb6413.636c-cloud1-9gdi5f822fbb6413-1308738323/images/image04.png" mode="aspectFit"></image>
+            <text>取</text>
+        </view>
+    </view>
+    <view>
+        <button class="share-btn" openType="share">分享好友</button>
+    </view>
+</view>
